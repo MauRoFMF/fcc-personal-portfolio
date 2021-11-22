@@ -26,7 +26,7 @@ body {
 #welcome-section {
     text-align: center;
     color: whitesmoke;
-    bbackground: rgb(40,0,0);
+    background: rgb(40,0,0);
     background: linear-gradient(315deg, rgba(40,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(52,0,0,1) 100%);
     padding: 200px 0;
 }
@@ -42,5 +42,49 @@ h1 {
 }
 
 #work {
+    text-align: center;
+    background: lightslategrey;
 }
 
+
+h2 {
+    margin-top: 0;
+    padding-top: 20px;
+}
+#projects {
+    display: flex;
+    margin: 0 auto 0 auto;
+    align-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    align-content: center;
+    width: 1024px;
+}
+
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    margin: 50px; 
+    background-color: bisque;  
+    padding: 10px 10px 0px 10px;
+    border: 2px solid black;
+  
+}
+
+.project-tile p {
+    background:lightslategray;
+    padding: 10px 0 ;
+    border-radius: 5px;
+    
+}
+
+.project-tile:hover {
+    background-color: grey;
+}
+
+@media only screen and (max-width: 600px) {
+    #projects {
+        width: 600px;
+    }
+  }
