@@ -3,11 +3,16 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#nav-bar {
+.container {
+    height:100vh;
+}
+
+#navbar {
     overflow: hidden;
     background-color: #333;
     top: 0;
     width: 100%;
+    font-weight: 700;
     text-align: end;
     position: fixed;
     background: rgb(180,58,105);
@@ -15,14 +20,14 @@ body {
     padding:3px;
 }
 
-#nav-bar a {
+#navbar a {
     padding: 20px 20px;
     text-decoration: none;
     color: black;
     font-size: 20px;
     font-weight: bold;
 }
-#nav-bar a:hover {
+#navbar a:hover {
     background-color: brown;
     color: whitesmoke;
 
@@ -30,16 +35,21 @@ body {
 
 #welcome-section {
     text-align: center;
+    align-self: center;
     color: whitesmoke;
     background: rgb(40,0,0);
     background: linear-gradient(315deg, rgba(40,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(52,0,0,1) 100%);
-    padding: 200px 0;
+    height: 100vh;
 }
 
 #welcome-section p {
     color: tomato;
     font-size: 26px;
 
+}
+
+h1 {
+    padding-top: 600px;
 }
 
 h1, h2{
@@ -113,4 +123,8 @@ footer p{
     background: grey;
     margin: 0;
     padding: 20px 0;
+}
+
+#profile-link {
+    font-size: 20px;
 }
